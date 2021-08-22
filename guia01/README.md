@@ -15,6 +15,7 @@ Esto es debido a que no se habían descargado todos los cambios antes de intenta
   - desarrollo
   - pruebas
   - producción
+  </br>
 Y se clonó el archivo *primeraversion.html* en la carpeta de guia02 subiendolo a la rama <ins>desarrollo</ins> con un nuevo párrafo. </br>
 Luego haciendo para pasar los cambios de rama a rama desde <ins>pruebas</ins> hasta <ins>producción</ins> se realizó lo siguiente:</br>
 ```
