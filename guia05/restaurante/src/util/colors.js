@@ -1,0 +1,6 @@
+
+export default {
+    PRIMARY_COLOR: '#E4D9FF',
+    BACKGROUND_COLOR: '#FAFAFF',
+    BUTTON_COLOR: '#30343F'
+}
