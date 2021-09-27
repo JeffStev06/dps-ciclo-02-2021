@@ -26,6 +26,11 @@ const DATA = [
     title: 'Mitsubishi',
     src: require('./src/images/Mitsubishi.jpg'),
   },
+  {
+    id: '4',
+    title: 'Mitsubishi',
+    src: require('./src/images/Mitsubishi.jpg'),
+  },
 ];
 
 const Item = ({title, img}) => (
