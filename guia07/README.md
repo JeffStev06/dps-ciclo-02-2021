@@ -14,11 +14,13 @@ Ambos desarrollados con expo, para probar
 
 ## navegacion
 
-[captura 1](./_capturas/desa1.png)
-[captura 2](./_capturas/desa2.png)
+captura 1|captura 2
+---------|---------
+![captura 1](./_capturas/desa1.png)|![captura 2](./_capturas/desa2.png)
 
 ---
 ## animales
 
-[captura 1](./_capturas/discu1.png)
-[captura 2](./_capturas/discu2.png)
+captura 1|captura 2
+---------|---------
+![captura 1](./_capturas/discu1.png)|![captura 2](./_capturas/discu2.png)
