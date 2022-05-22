@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {
   Text,
   TextInput,
@@ -11,9 +11,28 @@ import {
 import { Picker } from "@react-native-community/picker";
 
 const Form = ({paises, busqueda, setBusqueda, setConsultar}) => {
+  const [price,setPrice] = useState(0)
+
+  const getPrice = async () => {
+    await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd`)
+    .then(resp => resp.json())
+    .then(data => {
+      setPrice(data.bitcoin.usd);
+      console.log(data)
+      console.log(price)
+      //crypto = {..., asd: data.}
+    })
+    .catch(e => {
+      console.log("Error getPrice: " + e);
+    })
+  }
 
   const {pais} = busqueda;
   const [animacionboton] = useState(new Animated.Value(1));
+
+  useEffect(() => {
+    getPrice()
+  }, [])
 
   const consultarPais = () => {
     if (pais.trim() === '') {
